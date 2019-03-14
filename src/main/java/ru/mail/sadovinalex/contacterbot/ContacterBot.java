@@ -65,7 +65,7 @@ public class ContacterBot extends TelegramLongPollingBot {
                         }
                     }else {
                         try {
-                            sendMsg(msg, getValute(mainMsg[1]));
+                            sendMsg(msg, getValute(mainMsg[1].toUpperCase()));
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
